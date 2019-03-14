@@ -94,4 +94,9 @@ public class Message {
     public void addCharBinary(String b){
         this.message = this.message.concat(this.toBinaryString(b));
     }
+    
+    public String replaceEspace(){
+        String rez = this.message.replace(" ", "");
+        return rez;
+    }
 }
